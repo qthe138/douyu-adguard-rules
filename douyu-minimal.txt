@@ -1,6 +1,6 @@
 ! Title: Douyu Minimal - video + danmu + chat
 ! Description: Minimal Douyu live view: keep video picture, scrolling danmu and chat list (ID + content). Hide rankings, gifts, tasks, banners and promo links.
-! Version: 2026.10.08.2
+! Version: 2026.10.08.3
 ! ===== Douyu 极简模式 v2：画面 + 弹幕 + 聊天框 =====
 douyu.com###js-player-asideTopSuspension
 douyu.com###js-layout-fixed-right
@@ -14,6 +14,9 @@ douyu.com##.layout-Player-rankAll
 douyu.com###js-aside-gift-barrage-banner
 douyu.com##.GiftEffect-box
 douyu.com##.BarrageBanner
+! ===== v3：单条聊天只保留 ID + 正文，隐藏等级图标和粉丝牌 =====
+douyu.com###js-barrage-list .UserLevel
+douyu.com###js-barrage-list .FansMedalWrap
 ! ===== 画面下方礼物/任务栏 =====
 douyu.com###js-player-toolbar
 ! ===== 实验性规则：礼物区白底 =====
