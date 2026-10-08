@@ -1,0 +1,11 @@
+! Title: Douyu Minimal - video + danmu only
+! Description: Minimal Douyu live view: keep video picture and scrolling danmu, hide side panel, toolbar, floating ads and promo links.
+! ===== Douyu 极简模式：只留画面+弹幕 =====
+douyu.com###js-player-asideMain
+douyu.com###js-player-asideTopSuspension
+douyu.com###js-player-toolbar
+douyu.com###js-layout-fixed-right
+douyu.com##a.wm-pc-imgLink
+douyu.com##a.RoomText-item--link[data-dysign="30012"]
+douyu.com##.SignBaseComponent-sign-ad
+douyu.com##.wm-act-kefu-widget-new
