@@ -1,6 +1,6 @@
 ! Title: Douyu Minimal - video + danmu + chat
 ! Description: Minimal Douyu live view: keep video picture, scrolling danmu and chat list (ID + content). Hide rankings, gifts, tasks, banners and promo links.
-! Version: 2026.10.08.3
+! Version: 2026.10.09.4
 ! ===== Douyu 极简模式 v2：画面 + 弹幕 + 聊天框 =====
 douyu.com###js-player-asideTopSuspension
 douyu.com###js-layout-fixed-right
@@ -17,8 +17,15 @@ douyu.com##.BarrageBanner
 ! ===== v3：单条聊天只保留 ID + 正文，隐藏等级图标和粉丝牌 =====
 douyu.com###js-barrage-list .UserLevel
 douyu.com###js-barrage-list .FansMedalWrap
+! ===== v4：房间顶部横幅（实测可见，带关闭按钮的推广横幅）=====
+douyu.com###js-room-top-banner
+! ===== v4：输入区精简：隐藏喇叭/贵族弹幕/粉丝弹幕/粉丝牌入口，保留表情、输入框和发送按钮 =====
+douyu.com##.Horn4Category
+douyu.com##.ChatNobleBarrage
+douyu.com##.ChatFansBarrage
+douyu.com##.FansMedalPanel-enter
 ! ===== 画面下方礼物/任务栏 =====
 douyu.com###js-player-toolbar
-! ===== 实验性规则：礼物区白底 =====
-! 父层只有 hash class，斗鱼更新后可能失效；如画面异常先删这一条
-douyu.com##.interactive__8Ht4-
+! ===== v4：礼物区白底父层（结构写法替代 hash 类实验规则）=====
+! 该层只包裹工具栏；如画面异常先删这一条
+douyu.com###js-player-main > div:has(> #js-player-toolbar)
