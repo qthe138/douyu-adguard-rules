@@ -1,6 +1,6 @@
 ! Title: Douyu Minimal - video + danmu + chat
 ! Description: Minimal Douyu live view: keep video picture, scrolling danmu and chat list (ID + content). Hide rankings, gifts, tasks, banners and promo links.
-! Version: 2026.10.09.4
+! Version: 2026.10.10.5
 ! ===== Douyu 极简模式 v2：画面 + 弹幕 + 聊天框 =====
 douyu.com###js-player-asideTopSuspension
 douyu.com###js-layout-fixed-right
@@ -29,3 +29,34 @@ douyu.com###js-player-toolbar
 ! ===== v4：礼物区白底父层（结构写法替代 hash 类实验规则）=====
 ! 该层只包裹工具栏；如画面异常先删这一条
 douyu.com###js-player-main > div:has(> #js-player-toolbar)
+! ===== v5 推荐：页面大区块 =====
+douyu.com###js-header
+douyu.com###js-bottom-left
+douyu.com###js-room-snapbar
+douyu.com###js-room-activity
+! ===== v5 推荐：聊天区悬浮与特效 =====
+douyu.com###js-floatingbarrage-container
+douyu.com##.SignBarrage
+douyu.com##.BarrageCmd
+douyu.com##.AsideEffectPlayerDom
+douyu.com##.SvgaConfigEffect
+douyu.com##.DiamondsFansSvgaPlayerDom
+douyu.com##.EnterEffect
+! ===== v5 推荐：播放器内空广告位（预防性）=====
+douyu.com###player_h5_adDom
+douyu.com###PIPAdLayer-wrapper
+douyu.com###js-layout-fixed-banner
+douyu.com###js-layout-fixed-buff
+! ===== v5 可选-更激进：功能代价明确，异常时先删本组 =====
+douyu.com##.PopularBarrage
+douyu.com##.ChatBarrageCollect
+douyu.com###js-player-dialog
+douyu.com##.EffectPlayerDom
+douyu.com##.roomSmallPlayerFloatLayout
+douyu.com###js-player-guessgame
+douyu.com###js-player-pendant
+douyu.com###js-player-for-audio
+! ===== v5 可选-不稳定：hash/层级选择器，斗鱼发版可能失效或误伤 =====
+douyu.com##.activeContainer__8Qxzw
+douyu.com##.watermark-442a18
+douyu.com##body > aside
